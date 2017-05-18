@@ -44,12 +44,12 @@ Acknowledgements
 Screenshots
 -----------
 
-![](https://github.com/swell-pixel/worldclockwidget/blob/master/1-Main.png)
+![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/1-Main.png)
 
-![](https://github.com/swell-pixel/worldclockwidget/blob/master/2-Widget.png)
+![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/2-Widget.png)
 
-![](https://github.com/swell-pixel/worldclockwidget/blob/master/3-Add.png)
+![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/3-Add.png)
 
-![](https://github.com/swell-pixel/worldclockwidget/blob/master/4-Select.png)
+![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/4-Select.png)
 
-![](https://github.com/swell-pixel/worldclockwidget/blob/master/5-Edit.png)
+![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/5-Edit.png)
