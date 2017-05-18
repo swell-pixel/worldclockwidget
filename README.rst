@@ -28,7 +28,6 @@ Libraries
 
 The app uses and includes the following libraries:
 
-* `ActionBarSherlock <http://actionbarsherlock.com/>`_ (also on `GitHub <https://github.com/JakeWharton/ActionBarSherlock>`__)
 * `ColorPickerPreference <https://github.com/attenzione/android-ColorPickerPreference>`_
 * `google-gson <https://code.google.com/p/google-gson/>`_
 * `joda-time-android <https://github.com/dlew/joda-time-android>`_
@@ -44,12 +43,8 @@ Acknowledgements
 Screenshots
 -----------
 
-![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/1-Main.png)
-
-![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/2-Widget.png)
-
-![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/3-Add.png)
-
-![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/4-Select.png)
-
-![](https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/5-Edit.png)
+`1-Main.png   <https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/1-Main.png>`_
+`2-Widget.png <https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/2-Widget.png>`_
+`3-Add.png    <https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/3-Add.png>`_
+`4-Select.png <https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/4-Select.png>`_
+`5-Edit.png   <https://github.com/swell-pixel/worldclockwidget/blob/f6c6a0997816ab59f7d7bda1e97b80ee873cca26/5-Edit.png>`_
