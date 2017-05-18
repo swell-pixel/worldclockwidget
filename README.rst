@@ -1,16 +1,6 @@
 World Clock & Weather
 =====================
 
-**:warning: This project is unmaintained. There will be no more patches or updates. :warning:**
-
-**:heavy_exclamation_mark: Weather updates are broken and are disabled :heavy_exclamation_mark:**
-
-A simple application to display the local time and current weather conditions in places all over the world.
-It comes with two home screen widgets which show weather and time or time only.
-
-.. image:: https://travis-ci.org/arminha/worldclockwidget.svg?branch=master
-    :target: https://travis-ci.org/arminha/worldclockwidget
-
 Features
 --------
 
@@ -23,22 +13,10 @@ Features
 
 The Internet connectivity permission is **only** used to retrieve current weather conditions.
 
-Download
---------
-
-The latest version of the app is available on `Google Play <https://play.google.com/store/apps/details?id=ch.corten.aha.worldclock>`_
-and on `F-Droid <https://f-droid.org/repository/browse/?fdid=ch.corten.aha.worldclock>`_.
-
-Screenshots
------------
-
-`wiki/Screenshots <https://github.com/arminha/worldclockwidget/wiki/Screenshots>`_
-
 Building
 --------
 
-We use `Gradle <http://www.gradle.org/>`__.
-Run ``./gradlew assembleDebug`` to create a debug build or ``./gradlew assembleRelease`` to create a release build.
+AndroidStudio File - 'Import Project' and build
 
 OpenWeatherMap API key
 ######################
@@ -63,3 +41,15 @@ Acknowledgements
 * The weather icons are based on `Meteocons <http://www.alessioatzeni.com/meteocons/>`_ from Alessio Atzeni.
 * Time zone and geographical data is provided by `GeoNames <http://www.geonames.org/>`_.
 
+Screenshots
+-----------
+
+![](https://github.com/swell-pixel/worldclockwidget/blob/master/1-Main.png)
+
+![](https://github.com/swell-pixel/worldclockwidget/blob/master/2-Widget.png)
+
+![](https://github.com/swell-pixel/worldclockwidget/blob/master/3-Add.png)
+
+![](https://github.com/swell-pixel/worldclockwidget/blob/master/4-Select.png)
+
+![](https://github.com/swell-pixel/worldclockwidget/blob/master/5-Edit.png)

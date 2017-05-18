@@ -1,3 +1,8 @@
+1.8.7:
+
+* Modernized by switching from ActionBarSherlock to AppCompat
+* Re-enabled weather updates (you'll need an API key from OpenWeather)
+
 1.8.5:
 
 * Disable broken weather updates

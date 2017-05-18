@@ -28,10 +28,16 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.ListFragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.ActionMode;
 import android.text.format.DateFormat;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -41,13 +47,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ResourceCursorAdapter;
 import android.widget.TextView;
-
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.app.SherlockListFragment;
-import com.actionbarsherlock.view.ActionMode;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
 
 import org.joda.time.DateTimeUtils;
 import org.joda.time.DateTimeZone;
@@ -63,7 +62,7 @@ import ch.corten.aha.worldclock.provider.WorldClock;
 import ch.corten.aha.worldclock.provider.WorldClock.Clocks;
 import ch.corten.aha.worldclock.provider.WorldClock.Clocks.MoveTarget;
 
-public class WorldClockActivity extends SherlockFragmentActivity {
+public class WorldClockActivity extends AppCompatActivity {
     private static final boolean IS_GINGERBREAD = Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD;
 
     private static final int WEATHER_UPDATE_INTERVAL = 900000; // 15 minutes
@@ -80,7 +79,7 @@ public class WorldClockActivity extends SherlockFragmentActivity {
         }
     }
 
-    public static class ClockListFragment extends SherlockListFragment implements
+    public static class ClockListFragment extends ListFragment implements
     LoaderManager.LoaderCallbacks<Cursor>, PauseSource {
 
         private CursorAdapter mAdapter;
@@ -126,7 +125,7 @@ public class WorldClockActivity extends SherlockFragmentActivity {
                 // Restore contextual action bar state
                 CharSequence cab = savedInstanceState.getCharSequence(CAB);
                 if (cab != null) {
-                    mMode = getSherlockActivity().startActionMode(new ModeCallback());
+                    mMode = ((AppCompatActivity)getActivity()).startSupportActionMode(new ModeCallback());
                     mMode.setTitle(cab);
                     mMode.invalidate();
                 }
@@ -211,7 +210,7 @@ public class WorldClockActivity extends SherlockFragmentActivity {
 
                     if (checked.length > 0) {
                         if (mMode == null) {
-                            mMode = getSherlockActivity().startActionMode(new ModeCallback());
+                            mMode = ((AppCompatActivity)getActivity()).startSupportActionMode(new ModeCallback());
                         }
                         CharSequence format = getResources().getText(R.string.n_selcted_format);
                         mMode.setTitle(MessageFormat.format(format.toString(), checked.length));
@@ -225,7 +224,8 @@ public class WorldClockActivity extends SherlockFragmentActivity {
             });
         }
 
-        private class ModeCallback implements ActionMode.Callback {
+        private class ModeCallback implements ActionMode.Callback
+        {
 
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
@@ -288,9 +288,9 @@ public class WorldClockActivity extends SherlockFragmentActivity {
                     getListView().setItemChecked(i, false);
                 }
 
-                if (mode == mMode) {
+                //if (mode == mMode) {
                     mMode = null;
-                }
+                //}
             }
         }
 
